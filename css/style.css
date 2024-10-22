@@ -1,9 +1,9 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2a2c39; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ef6603; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --default-color: #1a1f24; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #485664; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #0ea2bd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -1803,57 +1803,88 @@ label {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
-  background-color: var(--surface-color);
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
-  padding: 60px 30px 60px 70px;
-  transition: all ease-in-out 0.3s;
-  border-radius: 18px;
-  height: 90%;
-  margin-bottom: 20px;
+.section-title {
+text-align: center;
+}
+
+.section-title h2 {
+  color: rgb(255, 132, 0);
+  font-weight: bolder;
+}
+.section-title p {
+  color: #0ea2bd;
+  font-weight:bold;
+}
+.services .img {
+  border-radius: 8px;
   overflow: hidden;
+}
+
+.services .img img {
+  transition: 0.6s;
+}
+
+.services .details {
+  background: color-mix(in srgb, var(--surface-color), transparent 5%);
+  padding: 50px 30px;
+  margin: -100px 30px 0 30px;
+  transition: all ease-in-out 0.3s;
   position: relative;
-  
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
-.services .service-item .icon {
+.services .details .icon {
+  margin: 0;
+  width: 72px;
+  height: 72px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: 6px solid var(--contrast-color);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
   position: absolute;
-  left: -20px;
-  top: calc(50% - 30px);
+  top: -36px;
+  left: calc(50% - 36px);
 }
 
-.services .service-item .icon i {
-  font-size: 64px;
-  line-height: 1;
-  transition: 0.5s;
-}
-
-.services .service-item h3 {
+.services .details h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item p {
+.services .details p {
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
   line-height: 24px;
-  font-size: 25px;
+  font-size: 14px;
   margin-bottom: 0;
 }
 
-
-
-
-@media (min-width: 1365px) {
-  .services .service-item:hover {
-    transform: translateY(-10px);
-  }
-
-  .services .service-item:hover h3 {
-    color: var(--accent-color);
-  }
+.services .service-item:hover .details h3 {
+  color: var(--accent-color);
 }
 
+.services .service-item:hover .details .icon {
+  background: var(--surface-color);
+  border: 2px solid var(--accent-color);
+}
+
+.services .service-item:hover .details .icon i {
+  color: var(--accent-color);
+}
+
+.services .service-item:hover .img img {
+  transform: scale(1.2);
+}
 
 
 /*** FONTS ***/
