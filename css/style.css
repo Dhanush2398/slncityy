@@ -55,8 +55,8 @@ section {
   padding: 7% 0;
 }
 .logo {
-  width: 70px;
-  height: auto;
+  width: 110px;
+  height: 100px;
 }
 @media only screen and (min-width: 768px) {
   section {
@@ -64,7 +64,7 @@ section {
   }
 }
 header {
-  background: #ef4b3f;
+  background: #0EA2BD;
 }
 .container {
   max-width: 86%;
@@ -141,7 +141,7 @@ header .container {
   margin-top: 160px;
 }
 #home {
-  background:#ef4b3f;
+  background:#0EA2BD;
   padding: 0;
 }
 .ban01 {
@@ -627,7 +627,7 @@ input[type="submit"]:hover {
 #footer {
   text-align: center;
   padding: 3% 0;
-  background-color: #ef4b3f;
+  background-color:#0EA2BD;
 }
 #footer a {
   color: #555;
@@ -651,7 +651,7 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 .modal {
-  background: #ef4b3f;
+  background:#0EA2BD;
 }
 .footer-nav {
   position: fixed;
@@ -1891,6 +1891,78 @@ text-align: center;
 
 .services .service-item:hover .img img {
   transform: scale(1.2);
+}
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about {
+  padding-bottom: 20px;
+}
+
+.about .content .aboutus {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.about .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0EA2BD;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.about .content ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: var(--accent-color);
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about .content .read-more {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.about .content .read-more:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  padding-right: 19px;
+}
+
+.about .content .read-more:hover i {
+  margin-left: 10px;
+}
+
+.about .about-images img {
+  border-radius: 10px;
 }
 
 
