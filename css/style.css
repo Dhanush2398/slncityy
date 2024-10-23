@@ -55,8 +55,8 @@ section {
   padding: 7% 0;
 }
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: auto;
 }
 @media only screen and (min-width: 768px) {
   section {
@@ -64,7 +64,7 @@ section {
   }
 }
 header {
-  background: #030102;
+  background: #ef4b3f;
 }
 .container {
   max-width: 86%;
@@ -141,7 +141,7 @@ header .container {
   margin-top: 160px;
 }
 #home {
-  background: #030102;
+  background:#ef4b3f;
   padding: 0;
 }
 .ban01 {
@@ -401,7 +401,7 @@ input[type="submit"] {
   padding: 6px 6%;
   box-sizing: border-box;
   margin: 12px 0 0 0;
-  background: black;
+  background:#ef4b3f;
   border: 1px solid #fff;
   color: #fff;
   text-transform: capitalize;
@@ -546,14 +546,21 @@ input[type="submit"]:hover {
 .nav-tabs .nav-link.active {
   border-color: #b3a47b #b3a47b #fff;
 }
+#amenities h3 {
+ color: black;
+ font-weight: 600;
+}
 #amenities {
   background: #eceadf;
 }
 #amenities h4 {
   margin: 0 0 3%;
 }
+
+
 #amenities p {
   line-height: 38px;
+  
 }
 #amenities ul {
   list-style-type: disc;
@@ -620,7 +627,7 @@ input[type="submit"]:hover {
 #footer {
   text-align: center;
   padding: 3% 0;
-  background-color: #121212;
+  background-color: #ef4b3f;
 }
 #footer a {
   color: #555;
@@ -644,7 +651,7 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 .modal {
-  background: #00000094;
+  background: #ef4b3f;
 }
 .footer-nav {
   position: fixed;
