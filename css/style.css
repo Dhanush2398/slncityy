@@ -52,7 +52,7 @@ h4 {
   font-weight: 500;
 }
 section {
-  padding: 7% 0;
+  padding: 4% 0;
 }
 .logo {
   width: 110px;
@@ -152,6 +152,15 @@ header .container {
   background:#0EA2BD;
   padding: 0;
 }
+ 
+
+
+
+
+
+
+
+
 .ban01 {
   position: absolute;
   width: 100%;
@@ -597,6 +606,7 @@ input[type="submit"]:hover {
   top: 50%;
   z-index: 9;
 }
+
 #amenities .controls-top a.btn-floating.left {
   background: url("../images/leftarrow.png") no-repeat;
   left: -3%;
@@ -2008,6 +2018,8 @@ text-align: center;
   font-size: 14px;
 }
 
+
+
 /*** FONTS ***/
 @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
 /*** VARIABLES ***/
@@ -2069,6 +2081,7 @@ font-weight: 700;
   padding: 0.125em 0.25em;
   z-index: 1;
 }
+
 .gradient ol.gradient-list > li:nth-child(10n+1):before {
   background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
 }
@@ -2101,4 +2114,22 @@ font-weight: 700;
 }
 .gradient ol.gradient-list > li + li {
   margin-top: 2rem;
+}
+
+.hero-img{
+  margin-top: 112px;
+  height: 80lvh;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .hero-img{
+  margin-top: 78px;
+  height: 80lvh;
+}
+}
+@media only screen and (max-width: 568px) {
+  .hero-img{
+  margin-top: 78px;
+  height: 40lvh;
+}
 }
