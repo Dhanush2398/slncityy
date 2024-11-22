@@ -2030,7 +2030,7 @@ text-align: center;
 
 .review:before {
   content: "";
-  background:#f6cacb	;
+  background:#8d8b84	;
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -2059,12 +2059,11 @@ text-align: center;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid black;
-  background-color: #fee9be	;
+  background-color:#6bcdcd	;
   margin-top: 50px;
 }
 
 .review .btn:hover {
-  background: #ccf5f5;
   border: 2px solid var(--accent-color);
 }
 
